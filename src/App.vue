@@ -3,7 +3,9 @@ import Layout from './Layout.vue';
 </script>
 
 <template>
-	<Layout>
-		<router-view />
-	</Layout>
+	<main>
+		<Layout>
+			<router-view />
+		</Layout>
+	</main>
 </template>

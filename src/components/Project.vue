@@ -10,11 +10,15 @@ defineProps<{ project: Project }>();
 
 <template>
   	<div class="flex gap-8">
-    	<div class="w-32 shrink-0 text-gray-300">
+    	<div class="hidden md:block w-32 shrink-0 text-gray-300">
       		{{ project.date }}
      	</div>
       	<div>
        		<Header2>{{ project.name }}</Header2>
+
+        	<div class="md:hidden w-32 shrink-0 text-gray-300 mb-4">
+          		{{ project.date }}
+         	</div>
 
          	<LinksContainer :links="project.links"></LinksContainer>
 

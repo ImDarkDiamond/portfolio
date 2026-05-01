@@ -11,7 +11,7 @@ defineProps<{ experience: Experience }>();
 
 <template>
   	<div class="flex gap-8">
-    	<div class="w-32 shrink-0 text-gray-300">
+    	<div class="hidden md:block w-32 shrink-0 text-gray-300">
       		{{ experience.date }}
      	</div>
       	<div>
@@ -20,6 +20,10 @@ defineProps<{ experience: Experience }>();
          		<Header3 class="text-gray-500">•</Header3>
            		<Header3>{{ experience.title }}</Header3>
          	</div>
+
+         	<div class="md:hidden w-32 shrink-0 text-gray-300 mb-4">
+           		{{ experience.date }}
+          	</div>
 
          	<LinksContainer :links="experience.links"></LinksContainer>
 
