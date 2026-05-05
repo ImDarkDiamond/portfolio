@@ -20,7 +20,7 @@ import { skills } from '../data/skills';
 </script>
 
 <template>
-	<div class="mt-24 flex flex-wrap md:flex-nowrap gap-8">
+	<div class="mt-20 flex flex-wrap md:flex-nowrap gap-8">
  		<div class="w-48 shrink-0 text-gray-300">
    			<img class="rounded-full" src="/avatar.webp" alt="Tesla Model S Plaid / Headshot"></img>
   		</div>
@@ -29,10 +29,14 @@ import { skills } from '../data/skills';
       			<Header>
       				Jayden Andrews
        			</Header>
-          		<Pill class="mb-3">
+          		<Pill class="mb-3 hidden md:block">
             		Open to work!
             	</Pill>
       		</div>
+
+      		<Pill class="mb-3 block md:hidden">
+        		Open to work!
+        	</Pill>
 
        		<Paragraph>
          		Software developer in Utah
@@ -76,7 +80,7 @@ import { skills } from '../data/skills';
 		Education
 	</Header3>
 
-	<div class="flex gap-16">
+	<div class="flex flex-wrap gap-x-16">
 		<Education v-for="e in education" :education="e"></Education>
 	</div>
 

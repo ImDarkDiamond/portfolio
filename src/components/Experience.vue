@@ -15,7 +15,7 @@ defineProps<{ experience: Experience }>();
       		{{ experience.date }}
      	</div>
       	<div>
-       		<div class="flex items-center gap-2">
+       		<div class="flex flex-wrap items-center gap-2">
        			<Header2>{{ experience.company }}</Header2>
          		<Header3 class="text-gray-500">•</Header3>
            		<Header3>{{ experience.title }}</Header3>
