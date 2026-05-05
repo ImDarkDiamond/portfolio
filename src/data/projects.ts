@@ -1,12 +1,12 @@
 import type { Project } from "../types/project";
 
 export const projects: Project[] = [
-	{
-		date: '2018 - present',
-		name: 'Arcane',
-		company: 'Privy.gg LLC',
-		description: 'Launched and scaled from 0 to over 2.85 million Discord communities, establishing Arcane as one of the largest Discord bots. Recently rewrote the entire service from the ground up in Rust to reduce operating costs by ~60%. Increased sales by over 30% in 2025.',
-		links: [
+  	{
+    	date: '2018 - present',
+     	name: 'Arcane',
+      	company: 'Privy.gg LLC',
+       	description: 'Designed, developed, and scaled a Discord bot to 2.85M+ servers. Full rewrite in Rust delivered ~60% infrastructure cost reduction and major performance gains. Built backend services (Node.js/Rust), Vue frontend, MongoDB data layer, Linux deployments, and real-time features.',
+        links: [
 			{
 				title: 'arcane.bot',
 				url: 'https://arcane.bot'
@@ -14,15 +14,15 @@ export const projects: Project[] = [
 			{
 				title: 'Github',
 				url: 'https://github.com/privy-gg'
-			},
-		]
-	},
-	{
-		date: '2021 - present',
-		name: 'Captcha.bot',
-		company: 'Privy.gg LLC',
-		description: 'Acquired and rebranded a competing service into Captcha.bot in 2021. Scaled it from 75K Discord communities to over 500K while turning it profitable within one year. Led full project execution including rebranding, development, and new CAPTCHA flows in partnership with external providers. Rewritten code cut operating costs by 90%. Improved overall functionality and user experience.',
-		links: [
+			}
+        ]
+   	},
+    {
+    	date: '2021 - present',
+     	name: 'Captcha.bot',
+      	company: 'Privy.gg LLC',
+       	description: 'Acquired, rebranded, and scaled from 75K to 500K+ Discord servers. Delivered 90% cost reduction via full rewrite. Implemented new CAPTCHA flows, backend APIs (Node.js/Rust), Vue dashboards, Postgresql, and optimized Linux-based deployments while achieving profitability in year one.',
+        links: [
 			{
 				title: 'captcha.bot',
 				url: 'https://captcha.bot'
@@ -30,7 +30,7 @@ export const projects: Project[] = [
 			{
 				title: 'Github',
 				url: 'https://github.com/privy-gg'
-			},
-		]
-	},
+			}
+        ]
+    }
 ];

@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import Experience from '../components/Experience.vue';
-import Project from '../components/Project.vue';
 import Header from '../components/ui/Header.vue';
 import Header3 from '../components/ui/Header3.vue';
 import Paragraph from '../components/ui/Paragraph.vue';
 import Divider from '../components/ui/Divider.vue';
+import Pill from '../components/ui/Pill.vue';
+import Link from '../components/ui/Link.vue';
+
+import Experience from '../components/Experience.vue';
+import Project from '../components/Project.vue';
 import SocialLinks from '../components/SocialLinks.vue';
 import Education from '../components/Education.vue';
 import Skill from '../components/Skill.vue';
+import GithubOverview from '../components/GithubOverview.vue';
 
 import { experiences } from '../data/experiences';
 import { education } from '../data/education';
@@ -21,9 +25,14 @@ import { skills } from '../data/skills';
    			<img class="rounded-full" src="/avatar.webp" alt="Tesla Model S Plaid / Headshot"></img>
   		</div>
     	<div>
-   			<Header>
-      			Jayden Andrews
-      		</Header>
+   			<div class="flex items-center gap-2">
+      			<Header>
+      				Jayden Andrews
+       			</Header>
+          		<Pill class="mb-3">
+            		Open to work!
+            	</Pill>
+      		</div>
 
        		<Paragraph>
          		Software developer in Utah
@@ -33,7 +42,9 @@ import { skills } from '../data/skills';
           		Software developer & Founder of Privy.gg. Self taught since age 13, I specialize in building fast and scalable software using Rust, TypeScript, and Vue.js.
             </Paragraph>
 
-            <SocialLinks/>
+            <SocialLinks class="mb-4" />
+
+           	<Link :link="{ title: 'jayden@jaydenandrews.dev', url: 'mailto:jayden@jaydenandrews.dev' }" />
      	</div>
 	</div>
 
@@ -68,4 +79,12 @@ import { skills } from '../data/skills';
 	<div class="flex gap-16">
 		<Education v-for="e in education" :education="e"></Education>
 	</div>
+
+ 	<Divider></Divider>
+
+ 	<Header3>
+  		Github Activity
+	</Header3>
+
+    <GithubOverview />
 </template>

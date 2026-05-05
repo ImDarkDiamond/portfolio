@@ -1,16 +1,16 @@
 import type { Experience } from "../types/experience";
 
 export const experiences: Experience[] = [
-	{
-		date: '2018 - present',
-		title: 'Founder',
-		company: 'Privy.gg LLC',
-		description: 'Founded Privy.gg, the company behind Arcane.bot (2.85 million+ Discord servers) and Captcha.bot (500K+ Discord servers). Solo-developed 2 of the most popular Discord bots. Delivered 50% infrastructure efficiency gains in latest rewrites. Made Captcha.bot profitable within a year of acquisition. Managed a team of over 10 volunteers for support.',
+  	{
+    	date: '2018 - present',
+     	title: 'Founder & Software Engineer',
+      	company: 'Privy.gg LLC',
+       	description: 'Founded and solo-developed high-scale Discord bots/apps (Arcane: 2.85M+ servers, Captcha.bot: 500K+ servers). Built and maintained full-stack infrastructure using Node.js, Rust, Vue, MongoDB, and Postgresql. Led large-scale deployments on Linux, database optimization, cost reductions (50-90%), and real-time systems handling millions of daily interactions. Managed volunteer support and moderation team of over 15.',
 		links: [
 			{
 				title: 'Website',
 				url: 'https://privy.gg'
 			},
 		]
-	},
+   	}
 ];

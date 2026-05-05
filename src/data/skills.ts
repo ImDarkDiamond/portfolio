@@ -6,6 +6,7 @@ export const skills: Skill[] = [
 	'Node.js',
 	'Vue.js',
 	'MongoDB',
+	'Postgresql',
 	'Linux',
 	'Docker',
 	'Git',
