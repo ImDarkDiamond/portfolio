@@ -7,7 +7,9 @@ import { repos } from '../data/repos';
 
 <template>
 	<!-- Thank you wakatime for making this so easy <3 -->
-	<figure class="overflow-auto mb-4"><embed src="https://wakatime.com/share/@ImDarkDiamond/8872c556-d7d0-4818-8218-816a0bf15a42.svg"></embed></figure>
+	<div style="min-height: 150px">
+		<figure class="overflow-auto"><embed src="https://wakatime.com/share/@ImDarkDiamond/8872c556-d7d0-4818-8218-816a0bf15a42.svg"></embed></figure>
+	</div>
 
 	<LinksContainer
 		:links="[

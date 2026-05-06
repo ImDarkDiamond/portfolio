@@ -21,9 +21,9 @@ import { skills } from '../data/skills';
 
 <template>
 	<div class="flex flex-wrap md:flex-nowrap gap-8">
- 		<div class="w-48 shrink-0 text-gray-300">
-   			<img class="rounded-full" src="/avatar.webp" alt="Tesla Model S Plaid / Headshot"></img>
-  		</div>
+		<div class="w-48 h-48 shrink-0 text-gray-300">
+			<img class="rounded-full" src="/avatar.webp" alt="Tesla Model S Plaid / Headshot">
+		</div>
     	<div>
    			<div class="flex items-center gap-2">
       			<Header>
