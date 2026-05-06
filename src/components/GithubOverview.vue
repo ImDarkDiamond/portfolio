@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import Paragraph from './ui/Paragraph.vue';
 import LinksContainer from './LinksContainer.vue';
+import Repo from './Repo.vue';
+import { repos } from '../data/repos';
 </script>
 
 <template>
@@ -12,4 +15,13 @@ import LinksContainer from './LinksContainer.vue';
 			{ title: 'WakaTime profile', url: 'https://wakatime.com/@ImDarkDiamond' }
 		]"
 	/>
+
+	<Paragraph>
+		Most of my work is closed source but you can find some of my open source code here:
+	</Paragraph>
+
+
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+		<Repo v-for="repo in repos" :repo="repo" />
+	</div>
 </template>

@@ -20,7 +20,7 @@ import { skills } from '../data/skills';
 </script>
 
 <template>
-	<div class="mt-6 md:mt-12 flex flex-wrap md:flex-nowrap gap-8">
+	<div class="flex flex-wrap md:flex-nowrap gap-8">
  		<div class="w-48 shrink-0 text-gray-300">
    			<img class="rounded-full" src="/avatar.webp" alt="Tesla Model S Plaid / Headshot"></img>
   		</div>

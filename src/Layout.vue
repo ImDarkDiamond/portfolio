@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.vue';
 </script> -->
 
 <template>
-	<div class="max-w-4xl mx-auto px-6 py-8">
+	<div class="max-w-4xl mx-auto px-6 py-8 mt-6 md:mt-12">
 		<!-- <Navbar/> -->
 
 		<slot/>
